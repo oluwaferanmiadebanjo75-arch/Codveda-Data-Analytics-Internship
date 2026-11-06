@@ -1,0 +1,7 @@
+Model,Stage,Accuracy,Precision,Recall,F1,ROC_AUC
+Logistic Regression,Baseline,0.9649,0.975,0.9286,0.9512,0.996
+Logistic Regression,Tuned,0.9649,0.975,0.9286,0.9512,0.996
+Decision Tree,Baseline,0.9298,0.9048,0.9048,0.9048,0.9246
+Decision Tree,Tuned,0.9298,1.0,0.8095,0.8947,0.9431
+Random Forest,Baseline,0.9737,1.0,0.9286,0.963,0.9929
+Random Forest,Tuned,0.9737,1.0,0.9286,0.963,0.995

@@ -1,0 +1,8 @@
+,value
+intercept,-131.874
+coef_bmi,10.763
+R2_train,0.366
+R2_test,0.233
+MSE_test,4061.826
+RMSE_test,63.732
+MAE_test,52.26

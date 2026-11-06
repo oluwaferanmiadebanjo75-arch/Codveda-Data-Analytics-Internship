@@ -1,0 +1,52 @@
+Train size: 353 | Test size: 89
+
+=== Simple Linear Regression: disease_progression ~ bmi ===
+intercept :   -131.874
+coef_bmi  :     10.763
+R2_train  :      0.366
+R2_test   :      0.233
+MSE_test  :   4061.826
+RMSE_test :     63.732
+MAE_test  :     52.260
+
+Interpretation: each +1 unit of BMI is associated with a 10.76-point rise in the disease progression score. BMI alone explains 23.3% of test-set variance.
+
+Bonus - multiple regression (all 10 features): R2_test=0.453, RMSE_test=53.85
+Standardised coefficients:
+ total_cholesterol   -44.45
+sex                 -11.51
+age                   1.75
+glucose               2.35
+hdl                   7.68
+tch_ratio            13.14
+bp                   16.83
+ldl                  24.64
+bmi                  25.61
+log_triglycerides    35.16
+
+
+Wine dataset shape: (178, 13); missing values: 0
+Inertia by k: [2314.0, 1658.8, 1277.9, 1175.4, 1109.5, 1046.0, 981.6, 935.2, 889.9, 845.9]
+Silhouette by k: {2: 0.259, 3: 0.285, 4: 0.26, 5: 0.202, 6: 0.237, 7: 0.204, 8: 0.157, 9: 0.15, 10: 0.144}
+Optimal k (elbow): 3 | best silhouette k: 3
+
+Final model: k=3, silhouette=0.285
+Cluster sizes: {1: 65, 2: 51, 3: 62}
+
+Cluster profiles (feature means):
+ cluster                            1       2        3
+alcohol                        12.25   13.13    13.68
+malic_acid                      1.90    3.31     2.00
+ash                             2.23    2.42     2.47
+alcalinity_of_ash              20.06   21.24    17.46
+magnesium                      92.74   98.67   107.97
+total_phenols                   2.25    1.68     2.85
+flavanoids                      2.05    0.82     3.00
+nonflavanoid_phenols            0.36    0.45     0.29
+proanthocyanins                 1.62    1.15     1.92
+color_intensity                 2.97    7.23     5.45
+hue                             1.06    0.69     1.07
+od280/od315_of_diluted_wines    2.80    1.70     3.16
+proline                       510.17  619.06  1100.23
+
+Sanity check vs. true wine cultivars (not used in fitting): Adjusted Rand Index = 0.897

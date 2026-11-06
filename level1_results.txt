@@ -1,0 +1,77 @@
+Shape: (442, 11)
+
+Missing values per column:
+ age                    0
+sex                    0
+bmi                    0
+bp                     0
+total_cholesterol      0
+ldl                    0
+hdl                    0
+tch_ratio              0
+log_triglycerides      0
+glucose                0
+disease_progression    0
+Duplicate rows: 0
+
+=== Summary statistics (mean, median, mode, std) ===
+                        mean  median    mode  std_dev    min     max
+age                   48.52   50.00   53.00    13.11  19.00   79.00
+bmi                   26.38   25.70   23.50     4.42  18.00   42.20
+bp                    94.65   93.00   83.00    13.83  62.00  133.00
+total_cholesterol    189.14  186.00  162.00    34.61  97.00  301.00
+ldl                  115.44  113.00  114.80    30.41  41.60  242.40
+hdl                   49.79   48.00   46.00    12.93  22.00   99.00
+tch_ratio              4.07    4.00    3.00     1.29   2.00    9.09
+log_triglycerides      4.64    4.62    4.44     0.52   3.26    6.11
+glucose               91.26   91.00   92.00    11.50  58.00  124.00
+disease_progression  152.13  140.50   72.00    77.09  25.00  346.00
+
+Skewness:
+ age                   -0.23
+bmi                    0.60
+bp                     0.29
+total_cholesterol      0.38
+ldl                    0.44
+hdl                    0.80
+tch_ratio              0.74
+log_triglycerides      0.29
+glucose                0.21
+disease_progression    0.44
+
+Outliers per column (1.5*IQR rule):
+ age                    0
+bmi                    3
+bp                     0
+total_cholesterol      8
+ldl                    7
+hdl                    7
+tch_ratio              2
+log_triglycerides      4
+glucose                9
+disease_progression    0
+
+Correlation with disease_progression:
+ bmi                  0.586
+log_triglycerides    0.566
+bp                   0.441
+tch_ratio            0.430
+glucose              0.382
+total_cholesterol    0.212
+age                  0.188
+ldl                  0.174
+hdl                 -0.395
+
+Strongest feature-feature correlations:
+ total_cholesterol  ldl                    0.897
+hdl                tch_ratio             -0.738
+ldl                tch_ratio              0.660
+tch_ratio          log_triglycerides      0.618
+bmi                disease_progression    0.586
+
+Mean progression by BMI category:
+ bmi_category  mean  count
+ Underweight  99.0      2
+      Normal 109.4    186
+  Overweight 165.0    155
+       Obese 213.3     99
